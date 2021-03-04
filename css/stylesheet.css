@@ -18,10 +18,10 @@ body {
   max-width: 840px;
   min-height: 100vh;
 }
+
 a img {
   vertical-align: middle;
 }
-
 /* 공통 클래스 */
 .respons{
   max-width: 100%;
@@ -63,11 +63,11 @@ a img {
 }
 /* 로고 */
 .brand{
-  margin: 0; 
+  margin: 0;
 }
 .brand a {
   display: block;
-  width: 245px;
+  width: 225px;
   padding: 15px;
 }
 /* 메인 메뉴 열기 버튼 */
@@ -77,7 +77,6 @@ a img {
   background: #ffffff;
   /* transition: all 0.3s ease; */
 }
-
 .is-open-menu .ir {
   display: block;
   cursor: pointer;
@@ -86,6 +85,7 @@ a img {
   background: url(../images/navigation-button.gif) no-repeat 50%;
 }
 /* 메인 메뉴 */
+
 .app-navigation {
   display: flex;
   flex-flow: row wrap;
@@ -134,16 +134,15 @@ a img {
   order: -1;
   padding: 20px;
   background: transparent;
+  color: #fff;
   font-weight: 100;
   font-size: 40px;
   line-height: 0.5;
   transition: all 0.4s ease;
-  color: white;
 }
-/* 메인 콘텐츠 - 이디야 추천 음료*/
+/* 메인 콘텐츠 - 이디야 추천 음료 */
 .app-main{
   padding: 70px 20px 20px 20px;
-
 }
 .ediya-menu{
   background-color: yellow;
@@ -153,19 +152,19 @@ a img {
 .ediya-menu__item{
   width: 100%;
   margin-bottom: 20px;
-
 }
 .ediya-menu__item:last-child{
   margin-bottom: 0;
 }
 .ediya-menu__item a{
   display: block;
-  background-color: aqua;
+  color:inherit;
+  text-decoration: none;
+  background-color: skyblue;
 }
 .ediya-menu__item a:hover img,
 .ediya-menu__item a:focus img{
   transform: scale(1);
-
 }
 .ediya-menu__item figure{
   text-align: center;
@@ -179,19 +178,19 @@ a img {
 }
 .ediya-menu__item figcaption{
   padding: 1em 0;
-
 }
-
-/* Medium 이상 디바이스 */
-@media screen and (min-width:720px){
+/*  Medium 이상 디바이스 */
+@media screen and (min-width: 720px){
   .ediya-menu{
     background-color: pink;
+    justify-content: space-between;
   }
-  .ediya-menu__item{
+  .ediya-menu__item {
     width: calc(50% - 10px);
     margin-top: 20px;
     margin-bottom: 0;
   }
-  .ediya-menu__item:nth-child(n-2){
+  .ediya-menu__item:nth-child(-n+2){
     margin-top: 0;
   }
+}
